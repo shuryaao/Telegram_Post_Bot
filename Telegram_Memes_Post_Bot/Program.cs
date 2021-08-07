@@ -73,8 +73,8 @@ namespace Telegram_Memes_Post_Bot
 
         private static (int httpPort, int healthCheckPort) GetDefinedPorts(IConfiguration config)
         {
-            var httpPort = config.GetValue("PORT", 5014);
-            var healthCheckPort = config.GetValue("HEALTH_CHECK_PORT", 5015);
+            var httpPort = config.GetValue("PORT", 5013);
+            var healthCheckPort = config.GetValue("HEALTH_CHECK_PORT", 5014);
             return (httpPort, healthCheckPort);
         }
 
